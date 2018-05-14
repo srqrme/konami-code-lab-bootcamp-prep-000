@@ -31,4 +31,3 @@ function onKeyDownHandler(e) {
     index = 0;
   }
 }
-}
