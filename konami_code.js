@@ -15,14 +15,15 @@ function init() {
   // your code here
   let index = 0
 
-  function onKeyDownHandler(e) {
-    document.body.addEventListener("keydown", (e)) {
-      const key = e.key
+  const body = document.querySelector('body')
 
-      if (key === codes[index]) {
-        index++
+  body.addEventListener('keydown', function(event) {
+    const key = e.key
 
-        if (index === codes.length)
+    if (key === codes[index]) {
+      index++
+
+      if (index === codes.length) {
         window.alert("Hurray!")
 
         index = 0
