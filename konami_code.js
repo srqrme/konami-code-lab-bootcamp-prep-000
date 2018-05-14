@@ -16,16 +16,16 @@ function init() {
   let index = 0;
 
 // This is the function that would be invoked by the event listener.
-document.body.addEventListener('keydown', function (e)) {
-  const key = e.key;
+  document.body.addEventListener('keydown', function (e)) {
+    const key = e.key;
 
-  if (key === codes[index]) {
-    index++;
+    if (key === codes[index]) {
+      index++;
 
-    if (index === codes.length) {
-      alert("Hurray!");
+      if (index === codes.length) {
+        alert("Hurray!");
 
-      index = 0;
+        index = 0;
     }
   } else {
     index = 0;
