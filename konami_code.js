@@ -17,7 +17,7 @@ function init() {
 
   const body = document.querySelector('body')
 
-  body.addEventListener('keydown', function(event) {
+  document.body.addEventListener('keydown', function(event) {
     const key = e.key
 
     if (key === codes[index]) {
